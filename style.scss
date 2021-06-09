@@ -1,0 +1,78 @@
+$gutter: 12px;
+$xxl: 1320px;
+$xl: 1200px;
+$lg: 960px;
+$md: 768px;
+$sm: 540px;
+
+
+.hd-grid {
+    margin: auto;
+    // padding-left: $gutter;
+    // padding-right: $gutter;
+    width: 100%;
+    display: grid; 
+    grid-auto-flow: row; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    //max widths, equal to bootstrap 5
+    @media only screen and (min-width: 576px) {
+        max-width: $sm;
+    }
+    @media only screen and (min-width: 768px) {
+        max-width: $md;
+    }
+    @media only screen and (min-width: 992px) {
+        max-width: $lg
+    }
+    @media only screen and (min-width: 1200px) {
+        max-width: $xl;
+    }
+    @media only screen and (min-width: 1400px) {
+        max-width: $xxl;
+    }
+}
+    @for $i from 1 through 12 {
+        @media only screen and (min-width: 0px) {
+            .hd-col-#{$i} {
+                grid-column: span #{$i};
+                padding-left: $gutter;
+                padding-right: $gutter;
+            }
+        }
+        @media only screen and (min-width: 576px) {
+            .hd-col-sm-#{$i} {
+                grid-column: span #{$i};
+                padding-left: $gutter;
+                padding-right: $gutter;
+            }
+        }
+        @media only screen and (min-width: 768px) {
+            .hd-col-md-#{$i} {
+                grid-column: span #{$i};
+                padding-left: $gutter;
+                padding-right: $gutter;
+            }
+        }
+        @media only screen and (min-width: 992px) {
+            .hd-col-lg-#{$i} {
+                grid-column: span #{$i};
+                padding-left: $gutter;
+                padding-right: $gutter;
+            }
+        }
+        @media only screen and (min-width: 1200px) {
+            .hd-col-xl-#{$i} {
+                grid-column: span #{$i};
+                padding-left: $gutter;
+                padding-right: $gutter;
+            }
+        }
+        @media only screen and (min-width: 1400px) {
+            .hd-col-xxl-#{$i} {
+                grid-column: span #{$i};
+                padding-left: $gutter;
+                padding-right: $gutter;
+            }
+        }
+      }
