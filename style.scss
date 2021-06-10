@@ -106,8 +106,8 @@ $sm: 540px;
     @media only screen and (min-width: 992px) {
         .hd-col-lg-#{$i} {
             grid-column: span #{$i};
-           
         }
+
     }
 }
 //end of lg columns
