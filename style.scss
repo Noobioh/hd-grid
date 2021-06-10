@@ -32,42 +32,99 @@ $sm: 540px;
         max-width: $xxl;
     }
 }
-    @for $i from 1 through 12 {
-        @media only screen and (min-width: 0px) {
-            .hd-col-#{$i} {
-                grid-column: span #{$i};
-                padding-left: $gutter;
-                padding-right: $gutter;
-            }
+
+//base columns
+@for $i from 1 through 12 {
+        .hd-col-#{$i} {
+            grid-column: span 12;
+            padding-left: $gutter;
+            padding-right: $gutter;
         }
-        @media only screen and (min-width: 576px) {
-            .hd-col-sm-#{$i} {
-                grid-column: span #{$i};
-                padding-left: $gutter;
-                padding-right: $gutter;
-            }
+        .hd-col-sm-#{$i} {
+            grid-column: span 12;
+            padding-left: $gutter;
+            padding-right: $gutter;
         }
-        @media only screen and (min-width: 768px) {
-            .hd-col-md-#{$i} {
-                grid-column: span #{$i};
-                padding-left: $gutter;
-                padding-right: $gutter;
-            }
+        .hd-col-md-#{$i} {
+            grid-column: span 12;
+            padding-left: $gutter;
+            padding-right: $gutter;
         }
-        @media only screen and (min-width: 992px) {
-            .hd-col-lg-#{$i} {
-                grid-column: span #{$i};
-                padding-left: $gutter;
-                padding-right: $gutter;
-            }
+        .hd-col-lg-#{$i} {
+            grid-column: span 12;
+            padding-left: $gutter;
+            padding-right: $gutter;
         }
-        @media only screen and (min-width: 1200px) {
-            .hd-col-xl-#{$i} {
-                grid-column: span #{$i};
-                padding-left: $gutter;
-                padding-right: $gutter;
-            }
+        .hd-col-xl-#{$i} {
+            grid-column: span 12;
+            padding-left: $gutter;
+            padding-right: $gutter;
         }
+        .hd-col-xxl-#{$i} {
+            grid-column: span 12;
+            padding-left: $gutter;
+            padding-right: $gutter;
+        }
+}
+//end of base columns
+
+//xs columns
+@for $i from 1 through 12 {
+    @media only screen and (min-width: 0px) {
+        .hd-col-#{$i} {
+            grid-column: span #{$i};
+           
+        }
+    }
+}
+//end of xs columns
+
+//sm columns
+@for $i from 1 through 12 {
+    @media only screen and (min-width: 576px) {
+        .hd-col-sm-#{$i} {
+            grid-column: span #{$i};
+           
+        }
+    }
+}
+//end of sm columns
+
+//md col
+@for $i from 1 through 12 {
+    @media only screen and (min-width: 768px) {
+        .hd-col-md-#{$i} {
+            grid-column: span #{$i};
+           
+        }
+    }
+}
+//end of md columns
+
+//lg columns
+@for $i from 1 through 12 {
+    @media only screen and (min-width: 992px) {
+        .hd-col-lg-#{$i} {
+            grid-column: span #{$i};
+           
+        }
+    }
+}
+//end of lg columns
+
+//xl columns
+@for $i from 1 through 12 {
+    @media only screen and (min-width: 1200px) {
+        .hd-col-xl-#{$i} {
+            grid-column: span #{$i};
+           
+        }
+    }
+}
+//end of xl columns
+
+//xxl columns
+@for $i from 1 through 12 {
         @media only screen and (min-width: 1400px) {
             .hd-col-xxl-#{$i} {
                 grid-column: span #{$i};
@@ -76,3 +133,4 @@ $sm: 540px;
             }
         }
       }
+//end of xxl columns
