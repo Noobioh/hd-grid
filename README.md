@@ -4,8 +4,6 @@ HD Grid is a custom CSS Grid solution as lighter alternative to Bootstrap.
 
 ## Usage
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
-
 ```html
 Use <div class="hd-col-sm-1"> to <div class="hd-col-xxl-12"> to build up your Grid column structure.
 i.e: 
